@@ -1,0 +1,165 @@
+.homeLeft-wrap{ box-shadow: 0px 0px 5px 1px #e5e5e5; box-shadow: 0px 0px 5px 1px #e5e5e5; box-shadow: 0px 0px 5px 1px #e5e5e5; border-radius: 5px; padding: 10px; float: left; width: 100%; }
+
+.hmFrClmn-wrap{ background: #46a6e7; border-radius: 8px; padding: 10px; padding-top: 15px; min-height: 85px; padding-right: 5px; }
+
+.hmFrClmn-wrap2{ background: #f6616a; }
+
+.hmFrClmn-wrap3{ background: #2fdfaa; }
+
+.hmFrClmn-wrap4{ background: #6646e7; }
+
+.homeLeft-wrap .col-md-3{ padding: 5px; }
+
+.hmFrClmn-rndBx{ padding: 10px; margin-right: 5px; float: left;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.hmFrClmn-rndBx img{ height: 25px; }
+  
+.hmFrClmn-wrap p{ color: #ffffff;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 7px; margin-bottom: 0px;
+    font-weight: 600; }
+
+.hmFrClmn-wrap p span{ font-size: 11px; font-weight: 400; }
+
+.hmFrClmn-row-wrap{ margin:0 -5px }
+
+.space50{ margin-top: 50px; }
+
+.space30{ margin-top: 30px; }
+
+.space10{ margin-top: 10px; }
+
+.table-icon-heading{  font-size: 15px; font-weight: 600; color: #000000; }
+
+.table-icon-heading img{ height: 25px; margin-right: 5px; }
+
+.header-search input[type="search"]{ padding: 0 10px; height: 40px; border-radius: 3px; font-size: 11px; }
+
+.header-search .hdrSrch-Bttn {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    border: 0px solid #ffffff;
+    padding: 9px 10px 9px 10px;
+    border-radius: 0 4px 4px 0;
+    background: none;
+}
+
+input[type="search"], input[type="date"]{ border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    height: 31px;
+}
+
+input[type=date]:invalid::-webkit-datetime-edit {
+    color: #999;
+}
+
+#example23_filter{ display: none !important; }
+
+#myTable_filter{ display: none !important; }
+
+#myTable_wrapper .dataTables_length{ display: none !important; }
+
+.table-search-wrap input{ float: right; width: 100%; }
+
+.table-search-wrap label {
+    float: right;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 5px;
+    margin-right: 2px; font-weight: 600;
+    color: #333333;
+}
+
+.empty {
+    color: #999;
+}
+
+.search-wrap{ position: relative; }
+
+.input-wrap{ width: 100%; max-width: 175px; margin-left: 5px; }
+
+.input-wrap.pull-right{ float: right; }
+
+.input-wrap button{ position: absolute; right: 8px; top: 4px; background: none; border: none; }
+
+table.hometable-wrap{ border: none !important; border-bottom: 1px solid #e5e5e5 !important; }
+
+.hometable-wrap .sorting_asc:after{ display: none !important; }
+
+.hometable-wrap .sorting_asc{ background-image: none !important; }
+
+.hometable-wrap .sorting:after{ display: none !important; }
+
+.hometable-wrap thead .sorting{ background-image: none !important; }
+
+.hometable-wrap thead th{ color: #28536d !important; border-top: 2px solid #e5e5e5 !important; border-bottom: 2px solid #e5e5e5 !important; }
+
+.hometable-wrap thead{ border-top: 2px solid #e5e5e5; border-bottom: 2px solid #e5e5e5; }
+
+.hometable-wrap tbody tr{ padding: 10px; }
+
+.hometable-wrap tbody tr td{ font-size: 13px; }
+
+.hometable-wrap tbody tr td.sorting_1{ font-weight: 600; color: #333333; }
+
+.hometable-wrap tbody tr.odd{ background: none !important; }
+
+.hometable-wrap tbody tr.even{ background: none !important; }
+
+.hometable-wrap tbody tr .sorting_1{ background: none !important; }
+
+.hometable-wrap tbody tr .sorting_1:hover{ background: none !important; }
+
+.actnBttn-Wrap button{ padding: 0; border: none; background: none; }
+
+.actnBttn-Wrap button img {
+    height: 13px;
+    vertical-align: top;
+    margin: 3px;
+}
+
+.tblTd-price{ color: #41b35a; font-weight: 600; }
+
+.fixed-table-container tbody td{ border-left: none; }
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px; border-radius: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 0px grey; 
+	border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #e5e5e5; 
+	border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #999999; 
+  }
+
+table tr th{ min-width: 60px; }
+
+/* Home 2 screen Start */
+
+.hmCrrntMnthOrdr-line{ font-weight: 600; font-size: 13px; color: #000000; }
+
+..hmCrrntMnthOrdr-line span{ font-weight: 400; } 
+
+/* Home 2 screen End */
