@@ -2,7 +2,7 @@ lsi: false
 safe: true
 source: ccportal/
 incremental: false
-include: [header]
+include: [header, bootstrap, css, img, js, kt, less, plugins]
 highlighter: rouge
 gist:
   noscript: false
