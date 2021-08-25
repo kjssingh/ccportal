@@ -1,5 +1,6 @@
 lsi: false
 safe: true
+baseurl: https://kjssingh.github.io/ccportal/
 source: ccportal/
 incremental: false
 include: [header, bootstrap, css, img, js, kt, less, plugins, components, datatables, bootstrap-table, dist, jquery, datatables-plugins, plugins/*]
