@@ -2,7 +2,7 @@ lsi: false
 safe: true
 source: ccportal/
 incremental: false
-include: [header, bootstrap, css, img, js, kt, less, plugins, bootstrap-table, dist, components, jquery, datatables, datatables-plugins]
+include: [header, bootstrap, css, img, js, kt, less, plugins, bootstrap-table, dist, components, jquery, datatables, datatables-plugins, plugins/*]
 highlighter: rouge
 gist:
   noscript: false
