@@ -1,0 +1,272 @@
+/* Custom columns */
+
+.col-40 {
+    min-height: 1px;
+    width: 50%;
+    padding: 0;
+    position: relative;
+    float: left;
+}
+
+.col-60 {
+    min-height: 1px;
+    width: 50%;
+    padding: 0;
+    position: relative;
+    float: left;
+}
+
+
+/* Custom Columns End */
+
+
+/* Paddings and Margins */
+
+.pad_6_0 {
+    padding: 6px 0;
+}
+
+.pad_50_100 {
+    padding: 50px 100px;
+}
+
+.pad_frm {
+    padding: 50px 70px;
+}
+
+
+/* Paddings and Margins End */
+
+
+/* Backgrounds */
+
+.back_gry {
+    background-color: #f3f4f4;
+}
+
+.back_whit {
+    background-color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgb(201 220 245 / 50%);
+}
+
+
+/* Backgrounds End */
+
+
+/* Navigation Login */
+
+.navbar {
+    box-shadow: 0 1px 10px rgb(0 0 0 / 18%);
+    height: 71px;
+    background-color: #fff;
+}
+
+.navbar-brand {
+    float: left;
+    height: 68px;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: inherit;
+}
+
+
+/* Navigation Login End */
+
+
+/* Headings and Texts */
+
+.head1 {
+    color: #398dc5;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+}
+
+.head2 {
+    color: #398dc5;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+}
+
+.head3 {
+    color: #005e85;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.head4 {
+    color: #3f3f3f;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+}
+
+.head5 {
+    color: #545454;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.labl {
+    color: #545454;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+
+/* Headings and Texts End */
+
+
+/* Images Start */
+
+.img_login {
+    width: 100%;
+}
+
+
+/* Images End */
+
+
+/* Switch Button */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* Switch Button End */
+
+.btn_login {
+    background-color: #eb616a;
+    color: #fff;
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    border: 1px solid #d2d2d2;
+    color: #545454;
+    letter-spacing: 0.02em;
+    box-shadow: none;
+    padding: 20px 15px;
+}
+
+@media (min-width: 768px) {
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .pad_frm {
+        padding: 40px 40px;
+    }
+    .pad_50_100 {
+        padding: 50px;
+    }
+    .col-40 {
+        min-height: 1px;
+        width: 50%;
+        padding: 0;
+        position: relative;
+        float: left;
+    }
+    .col-60 {
+        min-height: 1px;
+        width: 50%;
+        padding: 0;
+        position: relative;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .col-40 {
+        display: none;
+    }
+    .col-60 {
+        min-height: 1px;
+        width: 100%;
+        padding: 0;
+        position: relative;
+        float: left;
+    }
+    .pad_50_100 {
+        padding: 30px 10px;
+    }
+    .pad_frm {
+        padding: 15px 20px;
+    }
+}
