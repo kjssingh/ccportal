@@ -3403,7 +3403,7 @@ table.focus-on tbody tr.focused th {
 	width: 100%
 }
 .select2-container-multi .select2-choices {
-	border: 1px solid #border!important;
+	border: 1px solid border!important;
 	box-shadow: none!important;
 	background-image: none!important;
 	border-radius: 0!important;
@@ -4533,7 +4533,7 @@ ul.list-icons li i {
 	color: #fff
 }
 .editable-table+input.error {
-	border: 1px solid #danger;
+	border: 1px solid danger;
 	outline: 0;
 	outline-offset: 0
 }
