@@ -15,6 +15,14 @@
     font-size: 12px;
 }
 
+.tabl_head {
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
 .inpt_labl {
     color: #000;
     font-size: 13px;
@@ -87,7 +95,7 @@ input[type="email"] {
     border: none;
     font-size: 13px;
     border-radius: 20px;
-    margin: 0 5px;
+    margin: 0 5px 5px 5px;
     padding: 6px 20px;
 }
 
@@ -108,7 +116,7 @@ input[type="email"] {
     border: none;
     font-size: 13px;
     border-radius: 20px;
-    margin: 0 5px;
+    margin: 0 5px 5px 5px;
     padding: 6px 20px;
 }
 
@@ -120,6 +128,40 @@ input[type="email"] {
     opacity: 1;
     border: none;
     background: #ed515e;
+}
+
+.btn_grn {
+    background: #36ac4e;
+    color: #fff;
+    opacity: 0.8;
+    border: none;
+    font-size: 13px;
+    border-radius: 20px;
+    margin: 0 5px 5px 5px;
+    padding: 6px 20px;
+}
+
+.btn_grn:hover,
+.btn_grn:active,
+.btn_grn:focus {
+    color: #fff;
+    outline: none;
+    opacity: 1;
+    border: none;
+    background: #36ac4e;
+}
+
+.td_button {
+    vertical-align: middle;
+}
+
+.td_button>button {
+    border: 0;
+    background-color: #fff;
+}
+
+.font_11 {
+    font-size: 11px;
 }
 
 
@@ -164,6 +206,12 @@ input[type="email"] {
 .table>tbody>tr>th {
     font-size: 13px;
     color: #2e2e2e;
+}
+
+.gry_line {
+    background-color: #e5e5e5;
+    min-height: 1px;
+    margin: 10px 0;
 }
 
 
