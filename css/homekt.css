@@ -16,6 +16,12 @@
 
 .homeLeft-wrap{ box-shadow: 0px 0px 5px 1px #e5e5e5; box-shadow: 0px 0px 5px 1px #e5e5e5; box-shadow: 0px 0px 5px 1px #e5e5e5; border-radius: 5px; padding: 10px; float: left; width: 100%; }
 
+.trfLeft-wrap{ box-shadow: 0px 0px 5px 1px #e5e5e5; box-shadow: 0px 0px 5px 1px #e5e5e5; box-shadow: 0px 0px 5px 1px #e5e5e5; border-radius: 5px; padding: 10px; float: left; width: 100%; }
+
+.trfLeft-wrap .pddngRght5{ padding-right: 5px; }
+
+.trfLeft-wrap .pddngLft5{ padding-left: 5px; }
+
 .hmFrClmn-wrap{ background: #46a6e7; border-radius: 8px; padding: 10px; padding-top: 15px; min-height: 85px; padding-right: 5px; }
 
 .hmFrClmn-wrap2{ background: #f6616a; }
@@ -330,4 +336,79 @@ table thead th:after {
 
 /* Home 2 screen End */
 
+/* AM CSS start */
+.brdcrumb1{ color: #2d2d2d; font-size: 14px; font-weight: 600; }
+.brdcrumb2{ color: #ababab; }
+.brdcrumb3{ color: #676767; font-size: 12px; }
+.form-horizontal .form-group{ margin-left: -7.5px; margin-right: -7.5px; margin-bottom: 25px; }
+.inpt_labl_search{ color: #000; font-size: 13px; padding: 5px 7px; font-weight: 600; margin-bottom: 0; }
+.input-wrap-search{ width: 100%; }
+.trfLeftWrpMdl-body .input-wrap-search button{ position: absolute; right: 8px; top: 4px; background: none; border: none; }
+.btn_sub{ width: 150px; background: #0865a8; color: #fff; opacity: 0.8; border: 2px solid #ffffff; font-size: 13px; border-radius: 20px; margin: 0 5px; padding: 6px 20px; }
+.btn_rst{ background: #ed515e; color: #fff; opacity: 0.8; border:  2px solid #ffffff; font-size: 13px; border-radius: 20px; margin: 0 5px; padding: 6px 20px; }
+.pad_50{ padding: 50px; }
+.inpt_labl{ color: #333333; font-size: 13px; text-align: left; float: left; font-weight: 600; }
+.labl_red{ color: #fd0000; }
+.trfLeft-wrap input[type="text"], .trfLeft-wrap input[type="email"]{ border: 1px solid #e5e5e5; border-radius: 20px; height: 31px; }
+.trfLeft-wrap .textbox{ border: 1px solid #e5e5e5; border-radius: 20px; }
+.align_cntr{ text-align: center; }
+.back_grad{ background: rgb(80, 152, 202); background: linear-gradient( 90deg, rgba(80, 152, 202, 1) 0%, rgba(241, 81, 93, 1) 50%, rgba(101, 193, 120, 1) 100%); }
+.trfLeft-wrap .table>thead>tr>th{ vertical-align: middle; border-bottom: 1px solid #e5ebec; }
+.trfLeft-wrap .table>thead>tr>th{ color: #fff; font-size: 13px; font-weight: 400;  line-height: 24px; vertical-align: top; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.trfLeft-wrap .table>tbody>tr>td, .trfLeft-wrap .table>tbody>tr>th{ font-size: 13px; color: #2e2e2e; }
+/* AM CSS edn */
+
+.spnDtTm{ font-size: 11px;
+  font-weight: 500;
+  position: absolute; 
+}
+
+.form-control.slctrKt{ height: 31px; padding: 4px 12px; border-radius: 20px; }
+
+.trf-refrringDoctor{ font-weight: bold; float: left; font-weight: bold; color: #0b64a3; font-size: 14px !important; }
+
+.trfLeft-wrap .col-md-2.pddng5{ padding: 5px; }
+
+.trfLeft-wrap .fltIntl{ float: initial; }
+
+.trfLeft-wrap .events-content{ height: auto !important; }
+
+.algnLft{ text-align: left; }
+
+.trfLeft-wrap table thead th:after{ display: none; }
+
+.trfLeft-wrap .table{ margin-bottom: 0; }
+
+.trfLeft-wrap .table>tbody>tr>td, .trfLeft-wrap .table>thead>tr>th{ padding: 8px 15px !important; text-align: left; }
+
+.trfLeftWrpMdl-body .modal-backdrop{ display: none; }
+
+.trfLeft-wrap .modal-content{ -webkit-box-shadow: 0 5px 15px rgb(0 0 0 / 50%); box-shadow: 0 5px 15px rgb(0 0 0 / 50%); border: 1px solid #e5e5e5; }
+
+.trfLeftWrpMdl-body .modal-body .close{ position: absolute; cursor: pointer; z-index: 1;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  background: #0865a7 !important;
+  opacity: 1;
+  text-shadow: none;
+  color: #ffffff;
+  font-weight: 400;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  line-height: 7px; 
+}
+
+.trfLeftWrpMdl-body .modal-dialog{ margin: 0 auto; }
+
+.trfLeftWrpMdl-body .modal-content{ float: left; width: 100%; }
+
+.trfLeftWrpMdl-body .modal-body{ float: left; width: 100%; max-height: 440px; overflow: scroll; }
+
+.uppercase{ text-transform: uppercase; }
+
+.mdlTbl-button{ padding: 0px 10px; }
+
+.mdlTbl-button .fa-plus{ font-size: 11px; }
 
