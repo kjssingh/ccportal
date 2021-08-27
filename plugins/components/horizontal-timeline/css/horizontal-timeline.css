@@ -8,6 +8,20 @@ Main Components
 .cd-horizontal-timeline ol, .cd-horizontal-timeline ul {
   list-style: none;
 }
+
+.cd-horizontal-timeline ol{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.cd-horizontal-timeline ol li{ 
+  text-align: center;
+  width: 16%; min-width: 100px;
+}
+
 .cd-timeline-navigation a:hover, .cd-timeline-navigation a:focus {
    border-color:#01c0c8;
   
@@ -27,7 +41,7 @@ Main Components
 }
 .cd-horizontal-timeline {
   opacity: 0;
-  margin: 2em auto;
+  margin: 0 auto;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -44,15 +58,16 @@ Main Components
 .cd-horizontal-timeline .timeline {
   position: relative;
   height: 100px;
-  width: 90%;
-  max-width: 800px;
+  width: 78%; min-width: 420px;
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-wrapper {
   position: relative;
-  height: 100%;
-  margin: 0 40px;
-  overflow: hidden;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
   /* these are used to create a shadow effect at the sides of the timeline */
@@ -77,12 +92,12 @@ Main Components
   z-index: 1;
   left: 0;
   top: 30px;
-  height: 2px;
-  /* width will be set using JavaScript */
-  background: #dfdfdf;
+  height: 8px; border-radius: 10px;
+  background: #5197ca; background: -moz-linear-gradient(left,  #5197ca 0%, #ef525b 50%, #66c178 100%); background: -webkit-linear-gradient(left,  #5197ca 0%,#ef525b 50%,#66c178 100%); background: linear-gradient(to right,  #5197ca 0%,#ef525b 50%,#66c178 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5197ca', endColorstr='#66c178',GradientType=1 ); 
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
+  width: 100% !important;
 }
 .cd-horizontal-timeline .filling-line {
   /* this is used to create the green line filling the timeline */
@@ -108,13 +123,15 @@ Main Components
   transition: transform 0.3s;
 }
 .cd-horizontal-timeline .events a {
-  position: absolute;
-  bottom: 0;
+  position: absolute; line-height: 24px;
+  color: #000000;
+  font-weight: 600;
+  bottom: -7px;
   z-index: 2;
   text-align: center;
   font-size: 1.3rem;
-  padding-bottom: 15px;
- 
+  padding-bottom: 0px;
+  margin-left: -44px;
   /* fix bug on Safari - text flickering while timeline translates */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -133,33 +150,41 @@ Main Components
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  bottom: -5px;
-  height: 12px;
-  width: 12px;
+  bottom: -2px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
-  border: 2px solid #dfdfdf;
-  background-color: #f8f8f8;
+  border: 1px solid #ef555d;
+  background-color: #ffffff;
   -webkit-transition: background-color 0.3s, border-color 0.3s;
   -moz-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
+  z-index: -1;
 }
 .no-touch .cd-horizontal-timeline .events a:hover::after {
-  background-color: #01c0c8;
-  border-color: #01c0c8;
+  background-color: #ef555d;
+  border-color: #ef555d;
 }
 .cd-horizontal-timeline .events a.selected {
-  pointer-events: none;
+  pointer-events: none; color: #ef555d;
 }
+
+.cd-horizontal-timeline .events a span{ font-size: 10px; }
+
+.cd-horizontal-timeline .events a.selected span{
+  color: #ffffff;
+}
+
 .cd-horizontal-timeline .events a.selected::after {
-  background-color: #01c0c8;
-  border-color: #01c0c8;
+  background-color: #ef555d;
+  border-color: #ef555d;
 }
 .cd-horizontal-timeline .events a.older-event::after {
-  border-color: #01c0c8;
+  border-color: #ef555d;
 }
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
-    margin: 6em auto;
+    margin: 0 auto;
   }
   .cd-horizontal-timeline::before {
     /* never visible - this is used in jQuery to check the current MQ */
@@ -252,7 +277,7 @@ Main Components
   -ms-transform: translateX(-100%);
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
-  padding: 0 5%;
+  padding: 0 4%;
   opacity: 0;
   -webkit-animation-duration: 0.4s;
   -moz-animation-duration: 0.4s;
@@ -288,7 +313,6 @@ Main Components
   animation-direction: reverse;
 }
 .cd-horizontal-timeline .events-content li > * {
-  max-width: 800px;
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-content h2 {
