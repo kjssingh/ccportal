@@ -13,15 +13,15 @@
     <!-- ===== Bootstrap CSS ===== -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- ===== Plugin CSS ===== -->
-    <link href="plugins/components/horizontal-timeline/css/horizontal-timeline.css" rel="stylesheet">
+    <link href="../plugins/components/horizontal-timeline/css/horizontal-timeline.css" rel="stylesheet">
     <!-- ===== Animation CSS ===== -->
     <link href="css/animate.css" rel="stylesheet">
     <!-- ===== Custom CSS ===== -->
     <link href="css/style.css" rel="stylesheet">
 
 
-    <!-- <link href="plugins/components/owl.carousel/owl.carousel.min.css" rel="stylesheet" type="text/css" />
-    <link href="plugins/components/owl.carousel/owl.theme.default.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="../plugins/components/owl.carousel/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="../plugins/components/owl.carousel/owl.theme.default.css" rel="stylesheet" type="text/css" /> -->
     <!-- ===== Color CSS ===== -->
     <link href="css/colors/white.css" id="theme" rel="stylesheet">
     <link href="css/headerkt.css" rel="stylesheet">
@@ -715,6 +715,7 @@
 
                                                 <div class="space10"></div>
                                                 <button type="submit" class="btn btn-default btn_rst algnLft"> <i class="fa fa-dropbox"></i> Show Products </button>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -768,11 +769,215 @@
                                     </div>
                                 </li>
                                 <li data-date="specimen">
-                                    <h2><img class="img-responsive img-circle pull-left m-r-20 m-b-10" width="60" alt="user" src="../plugins/images/users/8.jpg"> Horizontal Timeline<br/><small>March 20th, 2014</small></h2>
-                                    <hr class="m-t-40">
-                                    <p class="m-t-40"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                        <button class="btn btn-info btn-rounded btn-outline">Read more</button>
-                                    </p>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <div class="col-sm-8">
+                                                <label class="inpt_labl align_cntr fltIntl"> If you know product codes please enter below and click Add Products. </label>
+                                                <textarea class="form-control textbox" rows="4"></textarea>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="space30"></div>
+                                                <div class="algnLft">
+                                                <button type="submit" class="btn btn-default btn_sub algnLft" data-toggle="modal" data-target="#responsive-modal3"> <i class="fa fa-plus"></i> Add Products </button>
+
+                                                <!-- modal open start -->
+                                                <div id="responsive-modal3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                                
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <p class="brdcrumb1"> Select Product from List: </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="space10"></div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <div class="form-horizontal">
+                                                                            <div class="form-group">
+                                                                                <label class="inpt_labl_search pull-left"> Search </label>
+                                                                                <div class="table-search-wrap pull-left">
+                                                                                    <div class="input-wrap-search search-wrap">
+                                                                                        <input type="search" class="form-control" placeholder="Search">
+                                                                                        <button><i class="search-button fa fa-search"></i></button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="homeLeft-wrap">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table nowrap uppercase" width="100%" data-height="400" data-mobile-responsive="true">
+                                                                            <thead class="back_grad">
+                                                                                <tr>
+                                                                                    <th> Product Code </th>
+                                                                                    <th> Product Name </th>
+                                                                                    <th> </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td> Acetone, Serum </td>
+                                                                                    <td> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td> Abs to Extractable Nuclear Ag: SS-A & SS-B </td>
+                                                                                    <td> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td> Beta Crosslaps (Beta Ctx), Serum </td>
+                                                                                    <td> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td> Total P1NP, Serum </td>
+                                                                                    <td> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td> Urea Nitrogen, 24 Hrs Urine </td>
+                                                                                    <td> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td> Antiparietal Cell Antibodies with Titers </td>
+                                                                                    <td> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td> Urea Nitrogen, 24Hrs Urine </td>
+                                                                                    <td> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <!-- model open end -->
+
+                                                <div class="space10"></div>
+                                                <button type="submit" class="btn btn-default btn_rst algnLft" data-toggle="modal" data-target="#responsive-modal4"></i> Show Products </button>
+
+                                                <!-- modal open start -->
+                                                <div id="responsive-modal4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                                
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <p class="brdcrumb1"> Select Specimen from List: </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="space10"></div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <div class="form-horizontal">
+                                                                            <div class="form-group">
+                                                                                <label class="inpt_labl_search pull-left"> Search Specimen </label>
+                                                                                <div class="table-search-wrap pull-left">
+                                                                                    <div class="input-wrap-search search-wrap">
+                                                                                        <input type="search" class="form-control" placeholder="Search">
+                                                                                        <button><i class="search-button fa fa-search"></i></button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="homeLeft-wrap">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table nowrap uppercase" width="100%" data-height="400" data-mobile-responsive="true">
+                                                                            <thead class="back_grad">
+                                                                                <tr>
+                                                                                    <th class="algnCntr"> Specimen </th>
+                                                                                    <th> </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td class="algnRght"> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td class="algnRght"> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td class="algnRght"> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td class="algnRght"> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td class="algnRght"> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td class="algnRght"> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td> 0011LS </td>
+                                                                                    <td class="algnRght"> <button type="reset" class="btn btn-success btn-rounded mdlTbl-button"> <i class="fa fa-plus"></i> Select </button> </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <!-- model open end -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8">
+                                                <div class="space50"></div>
+                                                <div class="homeLeft-wrap">
+                                                    <div class="table-responsive mnHght200">
+                                                        <table class="table nowrap uppercase" width="100%" data-height="400" data-mobile-responsive="true">
+                                                            <thead class="back_grad">
+                                                                <tr>
+                                                                    <th> Product Code </th>
+                                                                    <th> Product Name </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td> 0011LS </td>
+                                                                    <td> Acetone, Serum </td>
+                                                                </tr>
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 
                             </ol>
@@ -804,7 +1009,7 @@
     =============================== -->
 
     <!-- ===== jQuery ===== -->
-    <script src="plugins/components/jquery/dist/jquery.min.js"></script>
+    <script src="../plugins/components/jquery/dist/jquery.min.js"></script>
     <!-- ===== Bootstrap JavaScript ===== -->
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- ===== Slimscroll JavaScript ===== -->
@@ -814,14 +1019,14 @@
     <!-- ===== Menu Plugin JavaScript ===== -->
     <script src="js/sidebarmenu.js"></script>
     <!-- jQuery for carousel -->
-    <script src="plugins/components/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../plugins/components/owl.carousel/owl.carousel.min.js"></script>
     <!-- ===== Custom JavaScript ===== -->
     <script src="js/custom.js"></script>
     <!-- Horizontal-timeline JavaScript -->
-    <script src="plugins/components/horizontal-timeline/js/horizontal-timeline.js"></script>
+    <script src="../plugins/components/horizontal-timeline/js/horizontal-timeline.js"></script>
     <!-- ===== Plugin JS ===== -->
     <!-- ===== Style Switcher JS ===== -->
-    <!-- <script src="plugins/components/styleswitcher/jQuery.style.switcher.js"></script> -->
+    <!-- <script src="../plugins/components/styleswitcher/jQuery.style.switcher.js"></script> -->
 </body>
 
 </html>
