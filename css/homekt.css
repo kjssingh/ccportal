@@ -412,3 +412,9 @@ table thead th:after {
 
 .mdlTbl-button .fa-plus{ font-size: 11px; }
 
+.trfLeftWrpMdl-body .algnCntr{ text-align: center !important; }
+
+.trfLeftWrpMdl-body .algnRght{ text-align: right !important; }
+
+.mnHght200{ min-height: 200px; }
+
