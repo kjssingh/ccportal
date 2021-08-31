@@ -4,6 +4,8 @@
 
 .space30{ margin-top: 30px; }
 
+.space25{ margin-top: 25px; }
+
 .space20{ margin-top: 20px; }
 
 .space15{ margin-top: 15px; }
@@ -17,6 +19,8 @@
 .homeLeft-wrap{ box-shadow: 0px 0px 5px 1px #e5e5e5; box-shadow: 0px 0px 5px 1px #e5e5e5; box-shadow: 0px 0px 5px 1px #e5e5e5; border-radius: 5px; padding: 10px; float: left; width: 100%; }
 
 .trfLeft-wrap{ box-shadow: 0px 0px 5px 1px #e5e5e5; box-shadow: 0px 0px 5px 1px #e5e5e5; box-shadow: 0px 0px 5px 1px #e5e5e5; border-radius: 5px; padding: 10px; float: left; width: 100%; }
+
+.pyToSrl-wrap{ box-shadow: 0px 0px 5px 1px #e5e5e5; box-shadow: 0px 0px 5px 1px #e5e5e5; box-shadow: 0px 0px 5px 1px #e5e5e5; border-radius: 5px; padding: 10px; float: left; width: 100%; padding: 10px 4%; }
 
 .trfLeft-wrap .pddngRght5{ padding-right: 5px; }
 
@@ -358,6 +362,7 @@ table thead th:after {
 .trfLeft-wrap .table>tbody>tr>td, .trfLeft-wrap .table>tbody>tr>th{ font-size: 13px; color: #2e2e2e; }
 /* AM CSS edn */
 
+/* New TRF CSS start */
 .spnDtTm{ font-size: 11px;
   font-weight: 500;
   position: absolute; 
@@ -417,4 +422,38 @@ table thead th:after {
 .trfLeftWrpMdl-body .algnRght{ text-align: right !important; }
 
 .mnHght200{ min-height: 200px; }
+/* New TRF CSS end */
 
+
+/* Pay to SRL CSS start */
+.pymntGtwyOptn-wrap{ box-shadow: 0px 0px 5px 1px #e5e5e5; -webkit-box-shadow: 0px 0px 5px 1px #e5e5e5; -moz-box-shadow: 0px 0px 5px 1px #e5e5e5; -ms-box-shadow: 0px 0px 5px 1px #e5e5e5; border: 2px solid #e6e6e6; padding:20px 0; border-radius: 10px; max-width: 300px; margin: auto; }
+
+.pymntGtwyOptn-line{
+  color: #333333;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.pymntGtwyOptn-wrap img{ height: 45px; }
+
+.pyToSrl-ntBx-wrap{ max-width: 710px; margin: auto; background: #e5f3fc; border: 1px solid #bcdcee; padding: 20px; border-radius: 10px; margin-bottom: 30px; }
+
+.pyToSrl-ntBx-wrap .pymntGtwyOptn-line{ text-align: left; font-size: 14px; }
+
+.pyToSrl-ntBx-wrap p{ font-size: 11px; font-weight: 600; }
+
+/* Pay to SRL CSS start */
+
+
+@media screen and (max-width: 1200px){
+  .mini-sidebar .top-left-part{ width: auto; }  
+}
+
+@media screen and (max-width: 920px){
+  .spnDtTm{ position: relative; }
+}
+
+@media screen and (max-width: 767px){
+  .trfLeftWrpMdl-body .table-search-wrap{ padding: 5px 7px; margin-bottom: 20px; }
+}
