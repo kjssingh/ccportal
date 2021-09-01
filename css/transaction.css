@@ -38,11 +38,43 @@
     color: #fd0000;
 }
 
+.txt_zoom {
+    width: 75px;
+    color: #000;
+    display: inline-block;
+}
+
+.txt_info {
+    color: #616161;
+    padding: 0 20px;
+}
+
+.txt_prty_info {
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0 20px 0 0;
+}
+
+.txt_rd_test {
+    color: #fd0000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.txt_black {
+    color: #000;
+}
+
 
 /* Headings and Texts End */
 
 
 /* Paddings and Margins */
+
+.pad_0 {
+    padding: 0;
+}
 
 .pad_lr_30 {
     padding: 0 30px;
@@ -52,6 +84,18 @@
     padding: 50px;
 }
 
+.pad_10 {
+    padding: 10px;
+}
+
+.pad_20 {
+    padding: 20px;
+}
+
+.brdr_0 {
+    border: 0;
+}
+
 
 /* Paddings and Margins End */
 
@@ -59,7 +103,8 @@
 /* Inputs */
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+.selector {
     border: 1px solid #e5e5e5;
     border-radius: 20px;
     height: 31px;
@@ -82,13 +127,19 @@ input[type="email"] {
     border: none;
 }
 
+.checkbox-inline,
+.radio-inline {
+    vertical-align: inherit;
+    color: #000;
+}
+
 
 /* Inputs end */
 
 
 /* Buttons and Links */
 
-.btn_sub {
+.btn_submit {
     background: #0865a8;
     color: #fff;
     opacity: 0.8;
@@ -99,9 +150,9 @@ input[type="email"] {
     padding: 6px 20px;
 }
 
-.btn_sub:hover,
-.btn_sub:active,
-.btn_sub:focus {
+.btn_submit:hover,
+.btn_submit:active,
+.btn_submit:focus {
     color: #fff;
     outline: none;
     opacity: 1;
@@ -149,6 +200,68 @@ input[type="email"] {
     opacity: 1;
     border: none;
     background: #36ac4e;
+}
+
+.btn_save {
+    color: #fff;
+    background-color: #ef525c;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 5px 15px;
+    opacity: 0.8;
+}
+
+.btn_save:hover,
+.btn_save:active,
+.btn_save:focus {
+    color: #fff;
+    outline: none;
+    opacity: 1;
+    border: none;
+    background: #ef525c;
+}
+
+.btn_tabl_cntrl_bl {
+    background: #639ec8;
+    color: #fff;
+    opacity: 0.8;
+    border: none;
+    font-size: 13px;
+    border-radius: 5px;
+    margin: 0 5px 5px 5px;
+    padding: 6px 10px;
+}
+
+.btn_tabl_cntrl_bl:hover,
+.btn_tabl_cntrl_bl:active,
+.btn_tabl_cntrl_bl:focus {
+    color: #fff;
+    outline: none;
+    opacity: 1;
+    border: none;
+    background: #639ec8;
+}
+
+.btn_tabl_cntrl_rd {
+    background: #f36d76;
+    color: #fff;
+    opacity: 0.8;
+    border: none;
+    font-size: 13px;
+    border-radius: 5px;
+    margin: 0 5px 5px 5px;
+    padding: 6px 10px;
+}
+
+.btn_tabl_cntrl_rd:hover,
+.btn_tabl_cntrl_rd:active,
+.btn_tabl_cntrl_rd:focus {
+    color: #fff;
+    outline: none;
+    opacity: 1;
+    border: none;
+    background: #f36d76;
 }
 
 .td_button {
@@ -213,6 +326,37 @@ input[type="email"] {
     min-height: 1px;
     margin: 10px 0;
 }
+
+
+/* Modals Start*/
+
+.mod_hdr {
+    padding: 0;
+    background: rgb(80, 152, 202);
+    background: linear-gradient( 90deg, rgba(80, 152, 202, 1) 0%, rgba(241, 81, 93, 1) 50%, rgba(101, 193, 120, 1) 100%);
+    padding: 8px;
+    color: #fff;
+}
+
+.mod_hdr>h4 {
+    color: #fff;
+}
+
+.modal-header .close {
+    margin: 0;
+}
+
+.close {
+    opacity: 1;
+}
+
+.close:focus,
+.close:hover {
+    opacity: 1;
+}
+
+
+/* Modals End */
 
 
 /* Tables End */
