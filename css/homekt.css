@@ -460,6 +460,8 @@ table thead th:after {
 
 .algnCntr{ text-align: center; }
 
+.clrBth{ clear: both; }
+
 
 @media screen and (max-width: 1200px){
   .mini-sidebar .top-left-part{ width: auto; }  
@@ -469,6 +471,30 @@ table thead th:after {
   .spnDtTm{ position: relative; }
 }
 
+@media screen and (max-width: 768px){
+  .homeLeft-wrap{ margin-bottom: 15px; }
+}
+
 @media screen and (max-width: 767px){
   .trfLeftWrpMdl-body .table-search-wrap{ padding: 5px 7px; margin-bottom: 20px; }
+}
+
+@media screen and (max-width: 736px){
+  .table-search-wrap{ margin-bottom: 10px; float: left; width: 100%; }
+  .table-search-wrap .pull-right{ float: left; }
+  .table-responsive{ border: none; }
+  .dataTables_wrapper .dataTables_paginate{ border: none !important; }
+  .dataTables_wrapper .dataTables_paginate .paginate_button{ border: 1px solid #e5e5e5; margin-bottom: 10px; }
+  .dataTables_wrapper .dataTables_paginate .paginate_button.previous{ border: 1px solid #e5e5e5 !important; }
+}
+
+@media screen and (max-width: 512px){
+  .input-wrap{ max-width: 160px; }
+}
+
+@media screen and (max-width: 440px){
+  .navbar-header .logo img{ height: 40px; }
+  .navbar-header{ padding: 5px 10px 0px 10px; }
+  .navbar-top-links.pull-right{ margin-top: 0; }
+  .navbar-top-links.pull-right img{ margin-top: 2px; height: 30px; }
 }
