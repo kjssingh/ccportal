@@ -467,12 +467,20 @@ table thead th:after {
   .mini-sidebar .top-left-part{ width: auto; }  
 }
 
+@media screen and (max-width: 1024px){
+  .hm2Grdnt-wrap p{ line-height: 25px; }
+  .hm2Grdnt-wrap p.avrgCndctdTst-line{ line-height: 16px; margin-bottom: 0; }
+}
+
+
 @media screen and (max-width: 920px){
   .spnDtTm{ position: relative; }
 }
 
 @media screen and (max-width: 768px){
   .homeLeft-wrap{ margin-bottom: 15px; }
+  .hm2Grdnt-wrap p{ margin-bottom: 25px; margin-top: 10px; }
+  .hm2Grdnt-wrap p.avrgCndctdTst-line{ margin-bottom: 15px; }
 }
 
 @media screen and (max-width: 767px){
@@ -490,6 +498,12 @@ table thead th:after {
 
 @media screen and (max-width: 512px){
   .input-wrap{ max-width: 160px; }
+  .col-sm-3.pddngRght5{ padding-right: 15px; }
+  .col-sm-3.pddngLft5{ padding-left: 15px; }
+  .col-sm-4.pddngRght5{ padding-right: 15px; }
+  .col-sm-4.pddngLft5{ padding-left: 15px; }
+  .col-sm-8.pddngLft5{ padding-left: 15px; }
+  .col-sm-8.pddngRght5{ padding-right: 15px; }
 }
 
 @media screen and (max-width: 440px){
