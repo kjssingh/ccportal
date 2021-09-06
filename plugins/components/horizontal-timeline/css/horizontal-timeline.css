@@ -432,4 +432,5 @@ Main Components
   .cd-horizontal-timeline .timeline {
     min-width: 290px;
   }
+  .cd-horizontal-timeline .events a{ line-height:21px; font-size:1.1rem; bottom: -7px; }
 }
