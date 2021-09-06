@@ -427,3 +427,9 @@ Main Components
     margin-left: -1.5px;
     background-color: #eeeeee;
 }
+
+@media screen and (max-width:490px){
+  .cd-horizontal-timeline .timeline {
+    min-width: 290px;
+  }
+}
