@@ -209,9 +209,17 @@ footer p a:hover{ color:#ffffff; }
     .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{ display: block !important; }
 }
 
+@media screen and (max-width:767px) {
+    .page-wrapper-search { height:210px; }
+}
+
+
+
 @media screen and (max-width:580px) {
     .navbar-right>li>a { margin: 0 5px; }
     #demos .owl-carousel { margin: 1rem 0; }
     .navbar-header{ padding: 5px 20px 0px 20px; }
 }
+
+
 
