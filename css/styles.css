@@ -122,5 +122,6 @@ input:matches( [type="email"],
     text-align: justify;
 }
 
-
 /* Alignments End */
+
+.mn-hght100vh{ min-height: 100vh; }
