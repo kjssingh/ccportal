@@ -125,3 +125,7 @@ input:matches( [type="email"],
 /* Alignments End */
 
 .mn-hght100vh{ min-height: 100vh; }
+
+.mn-hght250px{ min-height: 250px; }
+
+.mn-hght450px{ min-height: 450px; }
