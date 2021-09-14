@@ -10,14 +10,18 @@
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png">
     <title>SRL</title>
+
+
+
     <!-- ===== Bootstrap CSS ===== -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- ===== Plugin CSS ===== -->
-    <link href="plugins/components/horizontal-timeline/css/horizontal-timeline.css" rel="stylesheet">
+    <link href="plugins/components/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
     <!-- ===== Animation CSS ===== -->
     <link href="css/animate.css" rel="stylesheet">
     <!-- ===== Custom CSS ===== -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
 
     <!-- <link href="plugins/components/owl.carousel/owl.carousel.min.css" rel="stylesheet" type="text/css" />
@@ -26,6 +30,9 @@
     <link href="css/colors/white.css" id="theme" rel="stylesheet">
     <link href="css/headerkt.css" rel="stylesheet">
     <link href="css/homekt.css" rel="stylesheet">
+    <link href="css/transaction.css" rel="stylesheet">
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,17 +42,18 @@
     <![endif]-->
 
 
-    <!-- <link rel="stylesheet" href="header/docs.theme.min.css"> -->
+
     <link rel="stylesheet" href="header/owl.carousel.min.css">
     <script src="header/jquery.min.js"></script>
     <script src="header/owl.carousel.js"></script>
 
 </head>
 
-<body class="mini-sidebar fix-header trfLeftWrpMdl-body">  
+<body class="mini-sidebar fix-header">
 
-    <!-- <div id="wrapper">
+    <div id="wrapper">
 
+        <!-- ===== Top-Navigation ===== -->
         <nav class="navbar navbar-default navbar-static-top m-b-0">
             <div class="navbar-header">
                 
@@ -80,6 +88,7 @@
                 </ul>
             </div>
         </nav>
+        <!-- ===== Top-Navigation-End ===== -->
 
         <div class="page-wrapper page-wrapper-search">
             <div class="container-fluid">
@@ -379,84 +388,147 @@
                 </div>
             </div>
         </div>
-    </div> -->
-
-    <!-- Page Content -->
-    
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <p class="brdcrumb1"> SRL CC Inventory&nbsp;&nbsp;&nbsp;<img width="15px" src="img/home-icon.png">&nbsp;&nbsp;<span class="brdcrumb2">-</span>&nbsp;&nbsp;<span class="brdcrumb3">Stock Transfer</span> </p>
-            </div>
-        </div>
-        <div class="space10"></div>
-        
-        <div class="ccInvnty-menu">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul>
-                        <li><a href="" class="active"> Stock </a></li>
-                        <li><a href=""> Consumption </a></li>
-                        <li><a href=""> Material Requisition </a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="space25"></div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="pyToSrl-wrap">
-                    <div class="row">
-                        <div class="col-sm-12 align_cntr">
-                            <h4 class="fnt-wght600"> Login </h4>
-                            <div class="space20"></div>
-                            <p class="pymntGtwyOptn-line"> Please enter your username and password </p>
-                        </div>
-                    </div>
-
-                    <div class="pyToSrl-ntBx-wrap ccInvntryLgn-wrap">
-                        <p class="ccInvntry-accntSmmry-line"> Account Information </p>
-                        <div class="space20"></div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label class="inpt_labl">User Name :</label>
-                            </div>
-                            <div class="col-md-9">
-                                <div>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="space20"></div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label class="inpt_labl">Password :</label>
-                            </div>
-                            <div class="col-md-9">
-                                <div>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="space20"></div>
-                        <button type="submit" class="btn btn-default btn_sub"> SUBMIT </button>
-                              
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
     </div>
     
+    
+    
+    <div class="page-wrapper">
+        <div class="container-fluid pad_lr_30">
+            <p class="brdcrumb1"> SRL CC Inventory&nbsp;&nbsp;&nbsp;<img width="15px" src="./img/home-icon.png">&nbsp;&nbsp;<span class="brdcrumb2">-</span>&nbsp;&nbsp;<span class="brdcrumb3">Current Stock</span> </p>
+            <div class="space10"></div>
+            <div class="ccInvnty-menu">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li><a href="" class="active"> Stock </a></li>
+                            <li><a href=""> Consumption </a></li>
+                            <li><a href=""> Material Requisition </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="space25"></div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="brdcrumb1"> Current Stock </p>
+                    <a href="" class="ccBttn-exprtTExcl"><i class="fa fa-file"></i> Export to Excel</a>
+                </div>
+            </div>
+            <div class="space10"></div>
+            <div class="crrntStck-slctLftWrap">
+                <p> Show </p>
+                <select class="form-control selector" id="sel1">
+                    <option>10</option>
+                    <option>25</option>
+                    <option>50</option>
+                </select>
+                <p> Entry </p>
+            </div>
+
+            <div class="crrntStck-slctRghtWrap">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-lg-3 col-md-3 col-sm-4 col-xs-4 inpt_labl_search">Search</label>
+                        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8 table-search-wrap">
+                            <div class="input-wrap-search search-wrap">
+                                <input type="search" class="form-control" placeholder="Search">
+                                <button><i class="search-button fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space10"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="homeLeft-wrap">
+                        <div class="table-responsive">
+                            <table class="table nowrap" width="100%" data-height="400" data-mobile-responsive="true">
+                                <thead class="back_grad">
+                                    <tr class="uppercase">
+                                        <th> Item Code </th>
+                                        <th> Item Name </th>
+                                        <th> Batch No </th>
+                                        <th> Expiry Date </th>
+                                        <th> Quantity </th>
+                                        <th> Unit </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="uppercase">
+                                        <td> RPKG0065 </td>
+                                        <td> R-Refrigerated Thermocole Medium Box </td>
+                                        <td>  </td>
+                                        <td>  </td>
+                                        <td> 1955 </td>
+                                        <td> NOC </td>
+                                    </tr>
+                                    <tr class="uppercase">
+                                        <td> RPKG0064 </td>
+                                        <td> R-Refrigerated Thermocole Medium Box </td>
+                                        <td>  </td>
+                                        <td>  </td>
+                                        <td> 6548 </td>
+                                        <td> NOC </td>
+                                    </tr>
+                                    <tr class="uppercase">
+                                        <td> RPKG0063 </td>
+                                        <td> R-Refrigerated Thermocole Medium Box </td>
+                                        <td>  </td>
+                                        <td>  </td>
+                                        <td> 1100 </td>
+                                        <td> NOC </td>
+                                    </tr>
+                                    <tr class="uppercase">
+                                        <td> RPKG0062 </td>
+                                        <td> R-Refrigerated Thermocole Medium Box </td>
+                                        <td>  </td>
+                                        <td>  </td>
+                                        <td> 6578 </td>
+                                        <td> NOC </td>
+                                    </tr>
+                                    <tr class="uppercase">
+                                        <td> RPKG0061 </td>
+                                        <td> R-Refrigerated Thermocole Medium Box </td>
+                                        <td>  </td>
+                                        <td>  </td>
+                                        <td> 2002 </td>
+                                        <td> NOC </td>
+                                    </tr>
+                                    <tr class="uppercase">
+                                        <td> RPKG0060 </td>
+                                        <td> R-Refrigerated Thermocole Medium Box </td>
+                                        <td>  </td>
+                                        <td>  </td>
+                                        <td> 1000 </td>
+                                        <td> NOC </td>
+                                    </tr>
+                                    <tr class="uppercase">
+                                        <td> RPKG0067 </td>
+                                        <td> R-Refrigerated Thermocole Medium Box </td>
+                                        <td>  </td>
+                                        <td>  </td>
+                                        <td> 8880 </td>
+                                        <td> NOC </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="space20"></div>
 
     <!-- Page Content -->
-    
-    <div class="clear"></div>
-    <div class="space50"></div>
 
-    <!-- <footer>
+    <footer>
         <p>
             <span> © 2021 - Diagnostics, All rights reserved </span>
             <a href=""> Corporate Site </a> |
@@ -465,8 +537,11 @@
             <a href=""> Disclaimer </a> |
             <a href=""> Terms &amp; Conditions </a>
         </p>
-    </footer> -->
-    
+    </footer>
+
+    <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
     <!-- ==============================
         Required JS Files
     =============================== -->
@@ -475,19 +550,75 @@
     <script src="plugins/components/jquery/dist/jquery.min.js"></script>
     <!-- ===== Bootstrap JavaScript ===== -->
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link href="plugins/components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
     <!-- ===== Slimscroll JavaScript ===== -->
     <script src="js/jquery.slimscroll.js"></script>
     <!-- ===== Wave Effects JavaScript ===== -->
     <script src="js/waves.js"></script>
+
+    <!-- ===== Data Table ===== -->
+    <script src="plugins/components/datatables/jquery.dataTables.min.js"></script>
     <!-- ===== Menu Plugin JavaScript ===== -->
     <script src="js/sidebarmenu.js"></script>
     <!-- jQuery for carousel -->
     <script src="plugins/components/owl.carousel/owl.carousel.min.js"></script>
     <!-- ===== Custom JavaScript ===== -->
     <script src="js/custom.js"></script>
-    <!-- Horizontal-timeline JavaScript -->
-    <script src="plugins/components/horizontal-timeline/js/horizontal-timeline.js"></script>
     <!-- ===== Plugin JS ===== -->
+    <script src="plugins/components/bootstrap-table/dist/bootstrap-table.min.js"></script>
+
+    <script>
+        $(function() {
+            $('#myTable').DataTable();
+
+            var table = $('#example').DataTable({
+                "columnDefs": [{
+                    "visible": false,
+                    "targets": 2
+                }],
+                "order": [
+                    [2, 'asc'],
+                ],
+                "displayLength": 25,
+                "drawCallback": function(settings) {
+                    var api = this.api();
+                    var rows = api.rows({
+                        page: 'current'
+                    }).nodes();
+                    var last = null;
+                    api.column(2, {
+                        page: 'current'
+                    }).data().each(function(group, i) {
+                        if (last !== group) {
+                            $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+                            last = group;
+                        }
+                    });
+                }
+            });
+            // Order by the grouping
+            $('#example tbody').on('click', 'tr.group', function() {
+                var currentOrder = table.order()[0];
+                if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                    table.order([2, 'desc']).draw();
+                } else {
+                    table.order([2, 'asc']).draw();
+                }
+            });
+        });
+        $('#example23').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
+            pageLength: 5,
+            lengthMenu: [
+                [5, 10, 20, -1],
+                [5, 10, 20, 'Todos']
+            ]
+        });
+    </script>
     <!-- ===== Style Switcher JS ===== -->
     <!-- <script src="plugins/components/styleswitcher/jQuery.style.switcher.js"></script> -->
 </body>
