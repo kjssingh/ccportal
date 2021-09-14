@@ -462,6 +462,35 @@ table thead th:after {
 
 .clrBth{ clear: both; }
 
+/* Pay to CC Inventory Login start */
+.ccInvnty-menu{ background: #006cb7; }
+
+.ccInvnty-menu ul{ list-style-type: none; }
+
+.ccInvnty-menu ul li{ float: left; }
+
+.ccInvnty-menu ul li a{ padding: 9px 10px; line-height: 37px; color: #ffffff; }
+
+.ccInvnty-menu ul li a.active{ background: #f1515d; }
+
+.ccInvnty-menu ul li a:hover{ background: #f1515d; }
+
+.fnt-wght600{ font-weight: 600; }
+
+.ccInvntry-accntSmmry-line{ font-size: 13px !important;
+  color: #000000;
+  text-align: center;
+}
+
+.ccInvntryLgn-wrap{ max-width: 525px; }
+
+.ccInvntryLgn-wrap input{ border: 1px solid #d2d2d2; border-radius: 20px; }
+
+.ccInvntryLgn-wrap button{ 
+  margin-left: calc(50% - 75px);
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
 
 @media screen and (max-width: 1200px){
   .mini-sidebar .top-left-part{ width: auto; }  
