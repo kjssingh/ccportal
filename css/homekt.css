@@ -489,7 +489,45 @@ table thead th:after {
 .ccInvntryLgn-wrap button{ 
   margin-left: calc(50% - 75px);
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px; 
+}
+
+.mn-hght250{ min-height: 250px; }
+
+.ccBttn-exprtTExcl{ font-size: 12px;
+  background: #0865a8;
+  color: #fff;
+  opacity: 0.8;
+  border-radius: 20px;
+  padding: 6px 15px; 
+}
+
+.ccBttn-exprtTExcl:hover{ color: #ffffff; opacity: 1; }
+
+.crrntStck-slctLftWrap{ float: left; width: 200px; }
+
+.crrntStck-slctLftWrap p{ float: left; margin-top: 5px; }
+
+.crrntStck-slctLftWrap select{ float: left;
+  width: 80px;
+  margin: 0 10px; 
+}
+
+.crrntStck-slctRghtWrap{ float: right; width: 300px; }
+
+.ccStckTrnsfr-wrap{ width: 100%; max-width: 100%; }
+
+.ccStckTrnsfr-wrap .stcktr-headline{ font-size: 14px; margin-bottom: 20px;
+  font-weight: 400; }
+
+.ccStckTrnsfr-wrap .inpt_labl{ font-weight: 500; color: #333333; font-size: 12px; }
+
+.stckTrnsfr-tble-wrap table thead th:first-child::after{ display: none; }
+
+.stckTrnsfr-tble-wrap input[type="text"]{ padding: 0 10px; background: #f6fbfe; border: 1px solid #bbdcef; }
+
+
+
 
 
 @media screen and (max-width: 1200px){
