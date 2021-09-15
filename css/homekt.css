@@ -528,6 +528,43 @@ table thead th:after {
 
 .stckTrnsfrBttn-wrap{ width: 265px; margin: auto; }
 
+.btn{ padding: 3px 12px; }
+
+.mrgnTp5{ margin-top: 5px !important; }
+
+.cnsmptnSrch-mdlDlg{ width: 95%; }
+
+.cnsmptnSrch-mdlDlg .modal-content{ float: left; width: 100%; }
+
+.cnsmptnSrch-mdlDlg .cnsmptnSrch-clsWrap{ float: left;
+  width: 100%;
+  padding: 5px 10px; 
+}
+
+.cnsmptnSrch-mdlDlg .cnsmptnSrch-clsWrap p{ float: left; color: #ffffff; margin-bottom: 0; font-weight: 400; }
+
+.cnsmptnSrch-mdlDlg .cnsmptnSrch-clsWrap button.close{ font-weight: 400;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.cnsmptnSrch-mdlDlg p.cnsmptnMdlLn-head{ font-weight: 500; }
+
+.cnsmptnSrch-mdlDlg p.cnsmptnMdlLn-head span{ text-transform: uppercase; font-weight: 400; }
+
+.mtrlRqstnAddNt{ color: red; font-size: 11px; margin-bottom: 20px; }
+
+.mtrlRqstnAddNt span{ font-weight: 600; }
+
+.wdth150{ width: 150px !important; }
+
+.mnWdth300{ width: 300px; }
+
+.fltLft{ float: left; }
+
+.wdth100p{ width: 100%; }
+
+.phrmcySmmryHm-wrap label{ font-size: 12px; font-weight: 500; color: #333333; }
 
 
 
