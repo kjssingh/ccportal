@@ -390,11 +390,9 @@
         </div>
     </div>
     
-    
-    
     <div class="page-wrapper">
         <div class="container-fluid pad_lr_30">
-            <p class="brdcrumb1"> SRL CC Inventory&nbsp;&nbsp;&nbsp;<img width="15px" src="./img/home-icon.png">&nbsp;&nbsp;<span class="brdcrumb2">-</span>&nbsp;&nbsp;<span class="brdcrumb3">Current Stock</span> </p>
+            <p class="brdcrumb1"> SRL CC Inventory&nbsp;&nbsp;&nbsp;<img width="15px" src="./img/home-icon.png">&nbsp;&nbsp;<span class="brdcrumb2">-</span>&nbsp;&nbsp;<span class="brdcrumb3">Stock Ledger View</span> </p>
             <div class="space10"></div>
             <div class="ccInvnty-menu">
                 <div class="row">
@@ -412,117 +410,169 @@
             
             <div class="row">
                 <div class="col-md-12">
-                    <p class="brdcrumb1"> Current Stock </p>
-                    <a href="" class="ccBttn-exprtTExcl"><i class="fa fa-file"></i> Export to Excel</a>
+                    <p class="brdcrumb1"> Stock Ledger View </p>
                 </div>
             </div>
-            <div class="space10"></div>
-            <div class="crrntStck-slctLftWrap">
-                <p> Show </p>
-                <select class="form-control selector" id="sel1">
-                    <option>10</option>
-                    <option>25</option>
-                    <option>50</option>
-                </select>
-                <p> Entry </p>
-            </div>
 
-            <div class="crrntStck-slctRghtWrap">
-                <div class="form-horizontal">
-                    <div class="form-group">
-                        <label class="col-lg-3 col-md-3 col-sm-4 col-xs-4 inpt_labl_search">Search</label>
-                        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8 table-search-wrap">
-                            <div class="input-wrap-search search-wrap">
-                                <input type="search" class="form-control" placeholder="Search">
-                                <button><i class="search-button fa fa-search"></i></button>
+            <div class="pyToSrl-ntBx-wrap ccStckTrnsfr-wrap">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="inpt_labl">From Date :</label>
+                            </div>
+                            <div class="col-md-9">
+                                <div>
+                                    <input type="date" id="date" class=" form-control empty">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="homeLeft-wrap">
-                        <div class="table-responsive">
-                            <table class="table nowrap" width="100%" data-height="400" data-mobile-responsive="true">
-                                <thead class="back_grad">
-                                    <tr class="uppercase">
-                                        <th> Item Code </th>
-                                        <th> Item Name </th>
-                                        <th> Batch No </th>
-                                        <th> Expiry Date </th>
-                                        <th> Quantity </th>
-                                        <th> Unit </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="uppercase">
-                                        <td> RPKG0065 </td>
-                                        <td> R-Refrigerated Thermocole Medium Box </td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td> 1955 </td>
-                                        <td> NOC </td>
-                                    </tr>
-                                    <tr class="uppercase">
-                                        <td> RPKG0064 </td>
-                                        <td> R-Refrigerated Thermocole Medium Box </td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td> 6548 </td>
-                                        <td> NOC </td>
-                                    </tr>
-                                    <tr class="uppercase">
-                                        <td> RPKG0063 </td>
-                                        <td> R-Refrigerated Thermocole Medium Box </td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td> 1100 </td>
-                                        <td> NOC </td>
-                                    </tr>
-                                    <tr class="uppercase">
-                                        <td> RPKG0062 </td>
-                                        <td> R-Refrigerated Thermocole Medium Box </td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td> 6578 </td>
-                                        <td> NOC </td>
-                                    </tr>
-                                    <tr class="uppercase">
-                                        <td> RPKG0061 </td>
-                                        <td> R-Refrigerated Thermocole Medium Box </td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td> 2002 </td>
-                                        <td> NOC </td>
-                                    </tr>
-                                    <tr class="uppercase">
-                                        <td> RPKG0060 </td>
-                                        <td> R-Refrigerated Thermocole Medium Box </td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td> 1000 </td>
-                                        <td> NOC </td>
-                                    </tr>
-                                    <tr class="uppercase">
-                                        <td> RPKG0067 </td>
-                                        <td> R-Refrigerated Thermocole Medium Box </td>
-                                        <td>  </td>
-                                        <td>  </td>
-                                        <td> 8880 </td>
-                                        <td> NOC </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="inpt_labl">To Date :</label>
+                            </div>
+                            <div class="col-md-9">
+                                <div>
+                                    <input type="date" id="date" class=" form-control empty">
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="space20"></div>
+                    <div class="stckTrnsfrBttn-wrap">
+                        <button type="" class="btn btn-rounded btn-primary">View</button>
+                        <button type="" class="btn btn-rounded btn-primary"> <i class="fa fa-file"></i> Export to Excel </button>
+                    </div>
                 </div>
+                
+            </div>
 
+       
+    <div class="space20"></div>
+    <div class="crrntStck-slctLftWrap">
+        <p> Show </p>
+        <select class="form-control selector" id="sel1">
+            <option>10</option>
+            <option>25</option>
+            <option>50</option>
+        </select>
+        <p> Entry </p>
+    </div>
+
+    <div class="crrntStck-slctRghtWrap">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-lg-3 col-md-3 col-sm-4 col-xs-4 inpt_labl_search">Search</label>
+                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8 table-search-wrap">
+                    <div class="input-wrap-search search-wrap">
+                        <input type="search" class="form-control" placeholder="Search">
+                        <button><i class="search-button fa fa-search"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="homeLeft-wrap">
+                <div class="table-responsive stckTrnsfr-tble-wrap">
+                    <table class="table nowrap" width="100%" data-height="400" data-mobile-responsive="true">
+                        <thead class="back_grad">
+                            <tr class="uppercase">
+                                <th> Document Date </th>
+                                <th> Document No </th>
+                                <th> Item Code </th>
+                                <th> Item Name </th>
+                                <th> Batch No </th>
+                                <th> Expiry Date </th>
+                                <th> Reciept </th>
+                                <th> Consumption </th>
+                                <th> Unit </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 18-Aug-2021 </td>
+                                <td> Closing </td>
+                                <td> PRN00022 </td>
+                                <td class="uppercase"> Window Envelope Big size: 10 x 12 </td>
+                                <td>  </td>
+                                <td>  </td>
+                                <td> 0 </td>
+                                <td>  </td>
+                                <td> NOS </td>
+                            </tr>
+                            <tr>
+                                <td> 26-Jul-2021 </td>
+                                <td> CN00042639 </td>
+                                <td> PRN00022 </td>
+                                <td class="uppercase"> Window Envelope Big size: 10 x 12 </td>
+                                <td>  </td>
+                                <td>  </td>
+                                <td>  </td>
+                                <td> 300 </td>
+                                <td> NOS </td>
+                            </tr>
+                            <tr>
+                                <td> 21-Jul-2021 </td>
+                                <td> RC00072928 </td>
+                                <td> PRN00022 </td>
+                                <td class="uppercase"> Window Envelope Big size: 10 x 12 </td>
+                                <td>  </td>
+                                <td>  </td>
+                                <td> 400 </td>
+                                <td>  </td>
+                                <td> NOS </td>
+                            </tr>
+                            <tr>
+                                <td> 1-Jul-2021 </td>
+                                <td> Opening </td>
+                                <td> PRN00022 </td>
+                                <td class="uppercase"> Window Envelope Big size: 10 x 12 </td>
+                                <td>  </td>
+                                <td>  </td>
+                                <td> 0 </td>
+                                <td>  </td>
+                                <td> NOS </td>
+                            </tr>
+                            <tr>
+                                <td> 18-Aug-2021 </td>
+                                <td> Closing </td>
+                                <td> CON07002 </td>
+                                <td> View Transport Medium with two swab- Ti </td>
+                                <td>  </td>
+                                <td>  </td>
+                                <td> 50 </td>
+                                <td>  </td>
+                                <td> KIT </td>
+                            </tr>
+                            <tr>
+                                <td> 1-Jul-2021 </td>
+                                <td> Opening </td>
+                                <td> CON07002 </td>
+                                <td> View Transport Medium with two swab- Ti </td>
+                                <td>  </td>
+                                <td>  </td>
+                                <td> 50 </td>
+                                <td>  </td>
+                                <td> KIT </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <div class="space20"></div>
+
+</div>
+</div>
 
     <!-- Page Content -->
 
